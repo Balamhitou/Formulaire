@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='./CSS/StyleForm.css'rel='stylesheet'>
+</head>
+<body>
+    <h2>Inscription au cycle Géo-Information</h2>
+    <div class="container" id="container">
+        
+        <div class="form-container Inscription">
+            <form action="#">
+                <h1>Inscrivez-vous</h1>
+                
+                <span>Intégrez vous le cylce ingénieur</span>
+                <input type="text" placeholder="Name" />
+                <input type="text" placeholder="parcours" />
+                <input type="text" placeholder="CNE" />
+                <input type="email" placeholder="Email" />
+                <input type="number" placeholder="Note moyenne" />
+                
+                <button id="button">Envoyer</button>
+            </form>
+        </div>
+
+        <span id="newClass" >Welcome to GéoInfoFamily </span>
+        
+    </div>
+    <script>
+        const sumbitButton= document.getElementById('button');
+       
+
+
+sumbitButton.addEventListener('click', () => {
+    const span= document.getElementById('newClass');
+	if(span.style["display"] == 'none'){
+        span.style["display"] ='block';
+    }else {
+        span.style["display"]  = ' none';
+    }
+});
+
+    </script>
+    
+</body>
+</html>
